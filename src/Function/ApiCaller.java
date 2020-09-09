@@ -243,8 +243,8 @@ public class ApiCaller {
 		ObjectMapper objectMapper = new ObjectMapper();
 		String resultJSON = "";
 		if(!outputDirFile.exists()) {
-			Model.Response response = new Model.Response("002", "參數錯誤，請檢查檔案路徑："+OUTPUT_FILE_PATH+"是否存在！");
-			logger.error("參數錯誤，請檢查檔案路徑："+OUTPUT_FILE_PATH+"是否存在！");
+			Model.Response response = new Model.Response("002", "參數錯誤，請檢查SR單號檔案路徑："+OUTPUT_FILE_PATH+"是否存在！");
+			logger.error("參數錯誤，請檢查SR單號檔案路徑："+OUTPUT_FILE_PATH+"是否存在！");
 			resultJSON = objectMapper.writeValueAsString(response);
 			return resultJSON;
 		}
